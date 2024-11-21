@@ -175,7 +175,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
 
     flooding_process = subprocess.Popen(flooding_command)
-    await update.message.reply_text('Started flooding.')
+    await update.message.reply_text('Start Cracking.')
 
 
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -192,7 +192,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     flooding_process.terminate()
     flooding_process = None
-    await update.message.reply_text('Stopped flooding.')
+    await update.message.reply_text('Password found **********.')
 
 
 async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
